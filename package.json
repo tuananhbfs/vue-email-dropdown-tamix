@@ -1,0 +1,55 @@
+{
+ 
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/tuananhbfs/vue-email-dropdown-tamix/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "core-js": "^3.4.7",
+    "keycoder": "^1.1.1",
+    "v-click-outside": "^3.0.0",
+    "vue": "^2.6.10"
+  },
+  "deprecated": false,
+  "description": "\"autocomplete\" change to Disable. Emit email value to parent component",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-unit-mocha": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/test-utils": "1.0.0-beta.30",
+    "babel-eslint": "^10.0.3",
+    "chai": "^4.2.0",
+    "deep-equal-in-any-order": "^1.0.21",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.0.1",
+    "np": "^5.2.1",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "files": [
+    "dist/vue-email-dropdown.umd.min.js",
+    "dist/vue-email-dropdown.css"
+  ],
+  "homepage": "https://github.com/tuananhbfs/vue-email-dropdown-tamix#readme",
+  "license": "ISC",
+  "main": "dist/vue-email-dropdown.umd.min.js",
+  "name": "vue-email-dropdown-tamix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuananhbfs/vue-email-dropdown-tamix.git"
+  },
+  "scripts": {
+    "build": "vue-cli-service build",
+    "bundle": "./node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name vue-email-dropdown ./src/components/EmailDropdown.vue",
+    "generate-tag": "npm run bundle && ./node_modules/np/source/cli.js",
+    "lint": "vue-cli-service lint",
+    "publish": "npm publish --access public",
+    "serve": "vue-cli-service serve",
+    "test": "vue-cli-service test:unit",
+    "test:watch": "vue-cli-service test:unit --watch"
+  },
+  "version": "1.0.1"
+}
